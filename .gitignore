@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+plano_projeto.json
+*.xml
+!agente_planejador_ms_project/**/*.xml
