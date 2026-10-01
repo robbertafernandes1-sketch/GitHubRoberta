@@ -1,0 +1,36 @@
+﻿ID;EAP;Área;Disciplina;Pacote de trabalho;Atividade;Quantidade;Unidade;Índice (Hh/un);Equipe (pessoas);Horas/dia;Duração (dias úteis);Origem;Predecessoras
+M00;1.0.0;Geral;Marcos;Marcos contratuais;Marco: Início da obra;;;;;;0;Marco;
+G01;1.1.1;Canteiro;Infraestrutura;Mobilização;Mobilização do canteiro;;;;;;10;Estimativa IA;M00
+G02;1.1.2;Canteiro;Infraestrutura;Mobilização;Instalação de almoxarifado e oficinas;;;;;;8;Estimativa IA;G01
+G03;1.2.1;Canteiro;Suprimentos;Recebimento;Recebimento das chapas dos tanques;;;;;;12;Estimativa IA;G01
+T01;2.1.1;Parque de tanques;Civil;Fundação TQ-01;Fundação do TQ-01;180;m³;6;12;9;10;Índice;G02
+T02;2.1.2;Parque de tanques;Civil;Fundação TQ-02;Fundação do TQ-02;180;m³;6;12;9;10;Índice;T01II+5
+T03;2.2.1;Parque de tanques;Mecânica;Montagem TQ-01;Montagem de fundo e costado do TQ-01;85;t;40;16;9;24;Índice;T01, G03
+T04;2.2.2;Parque de tanques;Mecânica;Montagem TQ-02;Montagem de fundo e costado do TQ-02;85;t;40;16;9;24;Índice;T02, G03, T03II+10
+T05;2.2.3;Parque de tanques;Mecânica;Acessórios TQ-01;Bocais, escadas e plataformas do TQ-01;12;t;55;8;9;10;Índice;T03, T07
+T06;2.3.1;Parque de tanques;Mecânica;Testes TQ-01;Teste hidrostático do TQ-01;;;;;;7;Estimativa IA;T05
+T07;2.4.1;Parque de tanques;Tubulação;Interligações TQ-01;Interligação de tubulação ao TQ-01;420;pol;1,8;8;9;11;Índice;T06
+T08;2.2.4;Parque de tanques;Mecânica;Acessórios TQ-02;Bocais, escadas e plataformas do TQ-02;12;t;55;8;9;10;Índice;T04
+T12;2.6.1;Parque de tanques;Isolamento;Isolamento TQ-02;Isolamento térmico do TQ-02;650;m²;1,2;6;9;15;Índice;T08
+T09;2.3.2;Parque de tanques;Mecânica;Testes TQ-02;Teste hidrostático do TQ-02;;;;;;7;Estimativa IA;T08, T12
+T10;2.4.2;Parque de tanques;Tubulação;Interligações TQ-02;Interligação de tubulação ao TQ-02;420;pol;1,8;8;9;11;Índice;T09
+T11;2.5.1;Parque de tanques;Pintura;Pintura dos tanques;Pintura externa dos tanques TQ-01 e TQ-02;2400;m²;0,9;10;9;14;Índice;T06, T09
+B01;3.1.1;Casa de bombas;Civil;Fundações;Fundação da casa de bombas;95;m³;6;10;9;7;Índice;G02
+B02;3.1.2;Casa de bombas;Civil;Fundações;Bases das bombas;24;m³;9;6;9;4;Índice;B01
+B03;3.2.1;Casa de bombas;Estrutura metálica;Estrutura;Estrutura metálica da casa de bombas;38;t;45;12;9;16;Índice;B01
+B04;3.3.1;Casa de bombas;Mecânica;Bombas;Montagem e alinhamento das bombas;6;un;60;6;9;7;;B02, B03
+B05;3.4.1;Casa de bombas;Tubulação;Tubulação;Tubulação da casa de bombas;1100;pol;1,8;5;9;44;Índice;B04
+B07;3.4.2;Casa de bombas;Tubulação;Tubulação;Teste hidrostático e limpeza da tubulação da casa de bombas;;;;;;10;Estimativa IA;B05
+B06;3.5.1;Casa de bombas;Pintura;Acabamento;Pintura de acabamento da casa de bombas;480;m²;0,9;6;9;8;Índice;B03
+P01;4.1.1;Pipe rack;Civil;Fundações;Fundações do pipe rack;60;m³;6;8;9;5;Índice;G02
+P02;4.2.1;Pipe rack;Estrutura metálica;Estrutura;Estrutura do pipe rack;120;t;45;24;9;25;Índice;P01
+P03;4.3.1;Pipe rack;Tubulação;Tubulação;Tubulação do pipe rack;2600;pol;1,8;16;9;33;Índice;P02II+25
+P04;4.4.1;Pipe rack;Elétrica;Bandejamento;Bandejamento elétrico do pipe rack;800;m;0,8;6;9;12;Índice;
+E01;5.1.1;Elétrica e instrumentação;Elétrica;Subestação;Montagem da subestação unitária;;;;;;18;Estimativa IA;G02
+E02;5.1.2;Elétrica e instrumentação;Elétrica;Cabos;Lançamento de cabos de força;9500;m;0,12;8;9;16;Índice;P04, E01
+E05;5.3;Elétrica e instrumentação;;;Malha de aterramento;1200;m;0,15;4;9;5;Índice;G01
+E03;5.2.1;Elétrica e instrumentação;Instrumentação;Instrumentos de campo;Montagem de instrumentos de campo;;;;6;9;12;Índice;P03
+E04;5.2.2;Elétrica e instrumentação;Instrumentação;Malhas;Teste de malhas de instrumentação;;;;;;10;Estimativa IA;E03, E02
+C01;6.1.1;Comissionamento;Comissionamento;Pré-comissionamento;Pré-comissionamento;;;;;;12;Estimativa IA;T07, T10, B07, E04, E05
+C02;6.1.2;Comissionamento;Comissionamento;Comissionamento;Comissionamento a quente;;;;;;15;Estimativa IA;C01, T11, P99
+M01;6.9.9;Geral;Marcos;Marcos contratuais;Marco: Liberação para operação;;;;;;5;Marco;C02

@@ -1,0 +1,16 @@
+﻿ID;Atividade;Início real (dia útil);Término real (dia útil);% concluído;Observação de campo
+M00;Marco: Início da obra;0;0;100;
+G01;Mobilização do canteiro;0;10;100;
+G02;Instalação de almoxarifado e oficinas;10;18;100;
+G03;Recebimento das chapas dos tanques;10;22;100;
+T01;Fundação do TQ-01;18;28;100;
+T02;Fundação do TQ-02;23;33;100;
+T03;Montagem de fundo e costado do TQ-01;28;;30;Chuva: 5 dias sem solda no costado do TQ-01
+T04;Montagem de fundo e costado do TQ-02;38;;8;
+B01;Fundação da casa de bombas;18;25;100;
+B02;Bases das bombas;25;29;100;
+B03;Estrutura metálica da casa de bombas;25;;60;"Estrutura com 44 t e não 38 t; equipe ainda com 12 pessoas"
+P01;Fundações do pipe rack;18;23;100;
+P02;Estrutura do pipe rack;23;;68;
+E01;Montagem da subestação unitária;18;32;100;"Subestação chegou antes; montagem concluída"
+E05;Malha de aterramento;10;15;100;
