@@ -20,4 +20,4 @@ Assistente de planejamento para obras de montagem industrial. Ele lê o cronogra
 - Decisões de projeto: `docs/fase-1-grill-me.md`. Consulte-o antes de mudar formato, calendário, limites ou fluxo.
 - Vocabulário de planejamento (EAP, TI/II/TT, folga, caminho crítico...): `CONTEXT.md`.
 - Arquivos de cada obra: `docs/obras/<nome-da-obra>/`.
-- Skills do projeto: `.claude/skills/` (`/grill-me` para entrevistar sobre um plano).
+- Skills do projeto: `.claude/skills/` (`/grill-me` para entrevistar sobre um plano, `/revisar-cronograma` para revisar antes do cliente).
